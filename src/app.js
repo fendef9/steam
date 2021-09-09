@@ -1,6 +1,6 @@
 const expres = require('express');
 const app = expres();
-const cors = require('cors');
+// const cors = require('cors');
 const { authRouter } = require('./middleware/authMiddleware');
 const { gameRouter } = require('./middleware/gameMiddleware');
 const { userGameRouter } = require('./middleware/userGameMiddleware');
@@ -11,7 +11,7 @@ const path = require('path');
 const publicPath = path.join(__dirname, '..', '/public');
 
 
-app.use(cors());
+// app.use(cors());
 app.use(expres.json());
 app.use(expres.static(publicPath));
 app.get(['/','/games','/friends','/profile', '/library'], (req, res) => {
