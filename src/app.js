@@ -6,7 +6,7 @@ const { gameRouter } = require('./middleware/gameMiddleware');
 const { userGameRouter } = require('./middleware/userGameMiddleware');
 const { userFriendRouter } = require('./middleware/userFriendMiddleware');
 const { profileRouter } = require('./middleware/profileMiddleware');
-const PORT =  process.env.PORT || 8081;
+const PORT =  "https://steam-val.herokuapp.com/"
 const path = require('path');
 const publicPath = path.join(__dirname, '..', '/public');
 
